@@ -33,11 +33,11 @@ router.get('/simple/get', function(req, res) {
 })
 
 router.get('/base/get', function(req, res) {
-  return res.json(req.query)
+  res.json(req.query)
 })
 
 router.post('/base/post', function(req, res) {
-  return res.json(res.body)
+  res.json(req.body)
 })
 
 router.post('/base/buffer', function(req, res) {
